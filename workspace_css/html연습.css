@@ -1,0 +1,47 @@
+.bg{
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 30px auto;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.bg>div:nth-child(3){
+
+  display: flex;
+  gap: 20px
+  ;
+  
+}
+
+.bg>div:nth-child(3)>button{
+  width: 100px;
+  height: 70px;
+  background-color: #92ddfb;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.76);
+  cursor: pointer;
+  border: none;
+  
+}
+img{
+  border: 1px solid black;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.bg>div:nth-child(3)>button:hover{
+  scale: 1.05;
+  box-shadow: none;
+  background-color: #66d4ff;
+  
+}

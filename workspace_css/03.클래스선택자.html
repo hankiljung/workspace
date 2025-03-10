@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+   /* 첫번째, 두번째 제목의 크기를 20으로 변경 */
+   /* 클래스 속성은 id 속성과 다르게 여러 태그에 적용 가능하다. */
+   /* id는 한가지 id는 # class는 . */
+
+    .클래스 {
+      background-color: #d2fff0;
+    }
+    
+    .df:hover {
+      color: antiquewhite;
+
+    }
+
+    .클래스 > p {
+      color: blue;      
+    
+    }
+    
+    .클래스:active {
+      background-color: blanchedalmond;
+    }
+
+    .클래스 > input:focus {
+      background-color: #004141;
+      color: white;
+    }
+    
+  </style>
+</head>
+
+<!-- 여기서부터 바디입니다 -->
+ 
+<body>
+  <div class="클래스">
+    <span class="df">제목1</span><br>
+    <span class="df">제목2</span><br>
+    <span id="sf">제목3</span><br>
+    <p>dfdf</p>
+    <input type="text">
+    <input type="button" value="버튼" >
+  </div>
+</body>
+</html>

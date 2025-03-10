@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(177, 177, 177, 0.795);
+}
+.main {
+  display: flex;
+}
+.box:hover {
+  box-shadow: 0 0 15px rgba(68, 68, 68, 0.795);
+  transition: 0.3s;
+}
+h1 {
+  color: white;
+
+  text-shadow: 0 0 10px black;
+}
+
+button {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+button:hover {
+  background-color: white;
+  border-radius: 5px;
+  text-shadow: 0 0 15px black;
+  transition: 0.3s;
+}

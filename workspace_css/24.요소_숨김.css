@@ -1,0 +1,33 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+  align-content: center;
+
+}
+.d1 {
+  background-color: skyblue;
+}
+.d2 {
+  background-color: rgba(135, 207, 235, 0.476);
+}
+
+.d2:hover {
+  /* visibility */
+  /* 기본속성 visible */
+  /* hidden 안보여도 공간은 차지함 */
+  /* displya : none 안보이고 공간도 안차지함*/
+  /* visibility: hidden; */
+  /* opacity = 불투명도 0~1 */
+
+  opacity: 0;
+  background-color: rgba(135, 207, 235, 0.476);
+  transition: 3s;
+}
+
+.d3 {
+  background-color: rgba(135, 207, 235, 0.119);
+}

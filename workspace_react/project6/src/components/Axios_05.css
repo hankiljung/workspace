@@ -1,0 +1,15 @@
+.t1 {
+  border-collapse: collapse;
+  border: 3px solid black;
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.t1 tr,
+.t1 td {
+  text-align: center;
+  border: 1px solid black;
+  vertical-align: top;
+}
+

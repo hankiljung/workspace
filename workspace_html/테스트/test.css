@@ -1,0 +1,47 @@
+.mainContainer {
+  width: 90%;
+  margin: auto;
+}
+.header {
+  margin-bottom: 50px;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* 필수입력사항 별표 */
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.black {
+  background-color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+td {
+  padding-left: 20px;
+  border: 1px solid lightgray;
+}
+
+.firstTd {
+  width: 15%;
+  padding: 10px 20px 10px;
+  background-color: rgb(238, 238, 238);
+}
+
+input{
+  border-style: none;
+  border: 1px solid lightgray;
+  height: 20px;
+}

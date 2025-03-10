@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.main {
+  background-color: skyblue;
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif; 
+}
+
+.box{
+  width: 50%;
+  
+  background-color: white;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 3px gray;
+}
+img{
+  width: 100%;
+}
+
+.fa-regular {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+.title {
+  padding: 10px;
+  font-weight: bold;
+}
+.dollar {
+  color: orange;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.gray {
+  color: gray;
+  font-weight: lighter;
+}
+.icon{
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box>p{ 
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.img>i{
+  cursor: pointer;
+}
+.img>i:active{
+  color: red;
+
+}
+.card>div>img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  margin-right: 10px;
+  
+}
+.card {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card>div:first-child{
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.bold {
+  font-weight: bold;
+}
+button{
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  height: 30px;
+
+}

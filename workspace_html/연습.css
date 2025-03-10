@@ -1,0 +1,19 @@
+.box {
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+}
+
+i {
+  position: absolute;
+  right: 5px;
+  color: orange;
+  z-index: 1;
+  top: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

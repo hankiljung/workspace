@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  grid-template-columns: repeat(2, auto) ;  
+  grid-template-rows: repeat(3,auto);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.container > div {
+  border: 1px solid red;
+  text-align: center;
+  font-size: 3rem;
+  align-content: center;
+}
+.container >div:first-child{
+  align-self: start;
+  justify-self: start;
+}
+
+span{ 
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 50%;
+}
+ 

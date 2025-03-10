@@ -1,0 +1,38 @@
+.bgcon{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(36, 56, 65);
+  /* 100vw 스크롤도 포함 */
+  /* 100% 스크롤 너비는 제외 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.bgcon>div{
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+img{
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.355);
+  margin-right: 20px;
+}
+.bold {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bgcon>div:hover {
+  scale: 1.05;
+  transition: .3s;
+}

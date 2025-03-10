@@ -1,0 +1,43 @@
+.bg {
+  display: flex;
+  border: 2px solid black;
+  margin: auto;
+  flex-direction: column;
+}
+
+.head {
+  border: 2px solid salmon;
+  display: flex;
+}
+
+.h1 {
+  flex-grow: 2;
+  border: 1px solid red;
+  height: 50px;
+  
+}
+.h2 {
+  flex-grow: 3;
+  height: 50px;
+
+  border: 1px solid red;
+}
+
+.body {
+  border: 2px solid skyblue;
+  height: 250px;
+  display: flex;
+
+}
+.b1 {
+  border: 1px solid blue;
+  flex-grow: 1;
+}
+.b2 {
+  border: 1px solid blue;
+  flex-grow: 3;
+}
+
+.foot { 
+  height: 50px;
+}

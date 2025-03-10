@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.shop_item.mapper.ShopItemMapper">
+
+    <resultMap id="shopItem" type="ShopItemDTO">
+        <id property="itemNum" column="ITEM_NUM"/>
+        <result property="itemName" column="ITEM_NAME"/>
+        <result property="itemPrice" column="ITEM_PRICE"/>
+        <result property="seller" column="SELLER"/>
+        <result property="itemIntro" column="ITEM_INTRO"/>
+        <result property="regDate" column="REG_DATE"/>
+
+    </resultMap>
+    
+    <!-- orderDTO resultMap에 정의할것 -->
+    <resultMap id="order" type="OrderDTO">
+        <id property="orderNum" column="ORDER_NUM"/>
+        <result property="itemNum" column="ITEM_NUM"/>
+        <result property="buyer" column="BUYER"/>
+        <result property="buyCnt" column="BUY_CNT"/>
+        <result property="buyPrice" column="BUY_PRICE"/>
+        <result property="buyDate" column="BUY_DATE"/>
+        <association property="shopItem" resultMap="shopItem"/>
+    </resultMap>
+
+
+
+    <!--리스트 조회 쿼리-->
+    <select id="selectAll" resultType="ShopItemDTO">
+        SELECT *
+        FROM ITEM_INFO
+        <if test=' searchValue != null and !searchValue.equals("")'>
+            WHERE ${searchKeyword} LIKE CONCAT('%', #{searchValue}, '%')
+        </if>
+    </select>
+
+    <!-- 게시글 상세 조회 쿼리 -->
+    <select id="selectByNum" resultType="ShopItemDTO">
+        SELECT
+        ITEM_NUM ,
+        ITEM_NAME ,
+        SELLER ,
+        ITEM_PRICE ,
+        REG_DATE
+        FROM ITEM_INFO
+        WHERE ITEM_NUM = #{itemNum}
+    </select>
+
+
+    <!-- 아이템 추가 쿼리 -->
+    <insert id="insertItem">
+        INSERT INTO ITEM_INFO (
+            ITEM_NAME   ,
+            ITEM_PRICE   ,
+            ITEM_INTRO   ,
+            SELLER
+        )
+        VALUES(
+            #{itemName} ,
+            #{itemPrice} ,
+            #{itemIntro} ,
+            #{seller}
+        )
+    </insert>
+
+    <!-- 상품 수정 쿼리 -->
+    <update id="updateItem">
+        UPDATE ITEM_INFO
+        SET
+        ITEM_NAME = #{itemName} ,
+        ITEM_PRICE = #{itemPrice} ,
+        ITEM_INTRO = #{itemIntro}
+        WHERE ITEM_NUM = #{itemNum}
+    </update>
+
+    <!--주문 추가 쿼리-->
+    <insert id="insertOrder">
+        INSERT INTO ORDER_INFO (
+        BUYER,
+        BUY_CNT,
+        BUY_PRICE,
+        ITEM_NUM
+        )
+        VALUES(
+        #{buyer},
+        #{buyCnt},
+        #{buyPrice},
+        #{itemNum}
+        )
+    </insert>
+
+
+
+
+    <select id="selectOrder" resultMap="order">
+        SELECT
+        o.ORDER_NUM,
+        i.ITEM_NAME,
+        i.ITEM_PRICE,
+        o.BUY_CNT,
+        o.BUY_PRICE,
+        o.BUYER,
+        o.BUY_DATE
+        FROM ORDER_INFO as o
+        LEFT OUTER JOIN ITEM_INFO AS i
+        ON o.ITEM_NUM = i.ITEM_NUM
+    </select>
+
+</mapper>
+

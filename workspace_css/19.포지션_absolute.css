@@ -1,0 +1,31 @@
+div {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+}
+/*  */
+/*  */
+.d1 {
+  /* z방향 설정은 */
+  /* 숫자가 큰것이 맨앞에 설정해야한다 */
+  /* z인덱스는 둘다 포지션을 줘야한다 */
+
+  z-index: 10;
+  background-color: aquamarine;
+  float: rigt;
+}
+/*  */
+/*  */
+.d2 {
+  background-color: skyblue;
+  top: 100px;
+  z-index: 100;
+  float: left;
+  left: 100px;
+}

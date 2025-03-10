@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .sm { background-color: black;
+     
+    }
+
+    table {
+      border: 1px solid #d2d2d2;
+      border-collapse: collapse;
+      width: 1200px;
+    }
+    
+    th {
+      font-family: 'Pretendard';
+      font-weight: 600;
+      font-display: swap;
+      src: local('Pretendard SemiBold'), url(./woff2/Pretendard-SemiBold.woff2) format('woff2'), url(./woff/Pretendard-SemiBold.woff) format('woff');
+      border: 1px solid hsl(0, 0%, 65%);
+      background-color: hsl(0, 0%, 91%);
+      width: 100px;
+    }
+    
+    td {
+      width: 600px;
+      padding: 10px;
+      border: 1px solid hsl(0, 0%, 65%);
+
+    }
+
+   
+    .eng {
+      float: inline-end; 
+    }
+
+    .cat {
+
+      font-size: 12px; 
+      font-family: 'Pretendard';
+      font-weight: 100;
+      font-display: swap;
+      src: local('Pretendard Thin'), url(./woff2/Pretendard-Thin.woff2) format('woff2'), url(./woff/Pretendard-Thin.woff) format('woff');
+
+    }
+    .back {
+
+      font-size: 15px; 
+      font-family: 'Pretendard';
+      font-weight: 100;
+      font-display: swap;
+      src: local('Pretendard Thin'), url(./woff2/Pretendard-Thin.woff2) format('woff2'), url(./woff/Pretendard-Thin.woff) format('woff');
+
+    }
+
+    .main {
+      font-size: 20px;
+      font-family: 'Pretendard';
+      font-weight: 700;
+      font-display: swap;
+      src: local('Pretendard Bold'), url(./woff2/Pretendard-Bold.woff2) format('woff2'), url(./woff/Pretendard-Bold.woff) format('woff');
+    }
+
+  </style>
+</head>
+<body>
+  <p>
+    <span class="sm">1</span> <span class="main">회원 가입</span>
+  </p>
+  
+  <table>
+    <tbody>
+    <tr>
+      <th>회원구분</th>
+      <td>
+        <input type="radio" checked name="회원"> 개인회원
+        <input type="radio"  name="회원"> 외국인회원(foreigner)
+      </td>
+    </tr>
+  </tbody>
+  </table>
+  <br><br><br>
+
+
+  
+<!-- 기본정보 -->
+  <span class="main">기본정보</span><span class="eng"><sub>필수입력사항</sub></span>
+  
+  <br> <br>
+  <table>
+    <tbody>
+
+      <!-- 아이디 -->
+      <tr>
+        <th>아이디</th>
+        <td>
+          <input type="text" placeholder="아이디를 입력하세요."><span class="back"> (영어소문자/숫자,4~16자리)</span>
+        </td>
+      </tr>
+      
+      <!-- 비밀번호 -->
+      <tr>
+        <th>비밀번호</th>
+        <td>
+          <input type="text" placeholder="비밀번호를 입력하세요."><span class="back"> (영어 대소문자/숫자/특수문자 중 2가지 이상 조합,8~16자)</span>
+        </td>
+      </tr>
+      
+      <!-- 비밀번호 확인 --><tr>
+        <th>비밀번호 확인</th>
+        <td>
+          <input type="text" placeholder="비밀번호를 입력하세요.">
+        </td>
+      </tr>
+
+      <!-- 이름 -->
+      <tr>
+        <th>이름</th>
+        <td>
+          <input type="text" placeholder="이름을 입력하세요.">
+        </td>
+      </tr>
+
+      <!-- 주소 -->
+      <tr>
+        <th>주소</th>
+        <td>
+          <input type="text" style="width: 40px;height: 17px;"> <input type="button" value="우편번호 &gt;"><br>
+          <input type="text" name="" id=""><span class="back"> 기본 주소</span><br>
+          <input type="text" name="" id=""><span class="back"> 나머지 주소 (선택입력가능)</span><br>
+        </td>
+      </tr>
+      <!-- 일반전화 -->
+      <tr>
+        <th>일반전화</th>
+        <td>
+          <select>
+            <option selected>국번</option>
+            <option>02</option>
+            <option>052</option>
+            <option>053</option>
+          </select> <span class="back">-</span>
+          <input type="text" style="width: 40px;"> <span class="back">-</span>
+          <input type="text" style="width: 40px;">
+        </td>
+      </tr>
+
+      <!-- 휴대전화 -->
+      <tr>
+      <th>휴대전화</th>
+      <td>
+        <select>
+          <option selected>앞번호</option>
+          <option>010</option>
+          <option>011</option>
+          <option>012</option>
+        </select> <span class="back">-</span>
+        <input type="text" style="width: 40px;"> <span class="back">-</span>
+        <input type="text" style="width: 40px;">
+      </td>
+    </tr>
+
+    <!-- 이메일 수신여부 -->
+    <tr>
+      <th>이메일 수신여부</th>
+      <td>
+        <input type="checkbox"> <span class="back">동의함</span><br> <span class="cat">쇼핑몰에서 제공하는 유익한 이벤트 소식을 받으실 수 있습니다.</span>
+      </td>
+    </tr>
+    
+    <!-- 평생회원 -->
+    <tr>
+      <th>평생회원</th>
+      <td>
+        <input type="radio" name="1" checked><span class="back">동의함</span>
+        <input type="radio" name="1"><span class="back">동의안함</span>
+        <br><span class="cat">- 지금 평생회원으로 가입하시면 <b>스타일맨</b>회원 탈퇴까지 휴먼으로 전환되지 않으며, 고객님의 정보는 탈퇴시까지 안전하게 보관됩니다.</span>
+        <br><span class="cat">- 지금 평생회원으로 가입하시면 <b>쿠폰혜택</b>을 드립니다(쿠폰혜택을 받으신 경우, 3개월간 평생회원을 유지하셔야합니다.)</span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+ <br><br><br>
+
+<!-- 추가정보 -->
+  <p>
+    <span class="main">추가정보</span>
+  </p>
+  
+  <table>
+    <tbody>
+    <tr>
+      <th>생년월일</th><!-- 생년월일 -->
+      <td>
+        <input type="text" style="width: 40px;"> <span class="back">년</span>
+        <input type="text" style="width: 40px;"> <span class="back">월</span>
+        <input type="text" style="width: 40px;"> <span class="back">일</span>
+        <input type="radio" checked name="did"> <span class="back">양력</span>
+        <input type="radio" name="did"> <span class="back">음력</span>
+      </td>
+    </tr>
+    <tr>
+      <th>성별</th><!-- 성별 -->
+      <td>
+        <input type="radio" checked name="sex"> <span class="back">남자</span>
+        <input type="radio" name="sex"> <span class="back">여자</span>
+      </td>
+    </tr>
+
+    <tr>
+      <th>상의사이즈</th><!-- 성별 -->
+      <td>
+        <input type="checkbox"><span class="back">90~95</span>
+        <input type="checkbox"><span class="back">100~105</span>
+        <input type="checkbox"><span class="back">105~110</span>
+        <input type="checkbox"><span class="back">115~120</span>
+
+      </td>
+    </tr>
+
+    <tr>
+      <th>하의사이즈</th><!-- 성별 -->
+      <td>
+        <input type="checkbox"><span class="back">~30</span>
+        <input type="checkbox"><span class="back">32</span>
+        <input type="checkbox"><span class="back">34</span>
+        <input type="checkbox"><span class="back">36</span>
+        <input type="checkbox"><span class="back">38</span>
+        <input type="checkbox"><span class="back">40</span>
+        <input type="checkbox"><span class="back">42~</span>
+
+      </td>
+    </tr>
+    
+  </tbody>
+  </table>
+
+</body>
+</html>

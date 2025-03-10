@@ -1,0 +1,43 @@
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+
+}
+
+.last > div{
+ display: flex; 
+ align-items: center;
+ height: 90px;
+ width: 300px;
+ background-color: white;
+ border-radius: 5px;
+ box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.618);
+cursor: pointer;
+
+
+}
+img {
+  width: 70px;
+  margin-left: 15px;
+  margin-right: 20px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.618);
+}
+
+.bold {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.last > div:hover {
+  scale: 1.03;
+  transition: .1s;
+  font-weight: bold;
+  color: gray;
+}

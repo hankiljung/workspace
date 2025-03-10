@@ -1,0 +1,39 @@
+.d1 {
+  border: 1px solid black;
+  width: 200px;
+  padding: 20px ;/* 상하좌우 */
+}
+
+.d5 {
+  border: 1px solid black;
+  width: 200px;
+  padding: 20px 5px 3px 2px;/* 상하좌우 */
+}
+h2 {
+  margin: auto;
+}
+.d6 {
+  border: 1px solid black;
+  width: 200px;
+  padding: 20px ;/* 상하좌우 */
+}
+
+.d2 {
+  border: 1px solid black;
+  width: 200px;
+  margin: 10px;
+
+  /* padding */
+  /* 10px 상하좌우 */
+  /* 10px 20px 상하, 좌우 */
+  /* 10px 10px 10px 상,좌우,하 */
+
+  /* margin */
+  /* 10px 상하좌우 */
+  /* 10px 20px 상하, 좌우 */
+  /* 10px 10px 10px 상,좌우,하 */
+  
+}
+
+.g1 {
+margin: auto;}

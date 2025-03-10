@@ -1,0 +1,32 @@
+.main {
+  background-color: black;
+}
+
+.space {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  font-size: 2rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+input {
+  height: 25px;
+  width: 200px;
+  margin-left: 10px;
+}

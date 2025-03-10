@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+span:hover{
+  color: gray;
+  cursor: pointer;
+}
+a:hover{
+  color: gray;
+  cursor: pointer;
+}
+span{
+  margin-right: 10px;
+}
+
+a{
+  text-decoration-line: none;
+  color: white;
+}

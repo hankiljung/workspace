@@ -1,0 +1,45 @@
+.bg {
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  border: 2px solid green;
+  display: flex;
+
+
+}
+
+.head > div:first-child {
+  height: 50px;
+  width: 60%;
+  border: 1px solid red;
+}
+.head > div:nth-child(2){
+  height: 50px;
+  width: 40%;
+  border: 1px solid aqua;
+}
+
+.body {
+  display: flex;
+  height: 500px;
+}
+
+.body div {
+  border: 1px solid brown;
+
+}
+.body > div:first-child {
+  width: 20%;
+}
+.body> div:nth-child(2){
+  width: 80%;
+}
+
+.footer{
+  display: flex;
+  height: 100px;
+}

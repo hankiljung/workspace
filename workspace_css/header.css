@@ -1,0 +1,31 @@
+.bg {
+  background-color: black;
+  height: 120px;
+  display: flex;
+  color: white;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+.bg > div {
+  width: 30%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;  
+}
+
+li {
+  text-align: center;
+}
+span{
+  font-weight: bold;
+}
+span::after{
+  content: ;
+}

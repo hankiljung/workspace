@@ -1,0 +1,144 @@
+/* 메인컨테이너 */
+.container-box {
+  background-color: #ededed;
+  width: 80%;
+  padding: 10px;
+}
+
+/* 인컨테이너 */
+.incon {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 40px;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+}
+
+/* 텍스트 관련  */
+.t1 {/* 타이틀 */
+  font-size: 25px;
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+}
+
+.t2 {/* 볼드 줄 내용 */
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* 마진 관련 */
+.mb {
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+
+.red{/* 빨간글자 */
+  color: red;
+}
+
+
+/* 텍스트 박스 */
+
+.tb1 {/* 텍스트박스 사이즈 라지 */
+ width: 90%;
+ height: 40px;
+ border-radius: 5px;
+ border: 1px solid lightgrey;
+ box-shadow: none;
+}
+.tb5 {/* 텍스트박스 사이즈 라지 */
+  width: 59%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  box-shadow: none;
+ }
+.tb2 {/* 이메일쪽 텍스트 박스 */
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.tb3 {
+  background-color: lightgrey;
+  width: 25%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+/* 셀렉트 박스 */
+select{
+  width: 29.5%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+
+/* foot 디자인 */
+.foot {margin-top: 30px;
+  text-align: center;
+}
+
+
+/* 버튼 관련 */
+
+button { /* 전체 버튼*/
+  cursor: pointer;
+  font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+
+}
+
+.but1 { /* 버튼1 */
+  background-color: #ededed;
+
+  border: none;
+
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.s1 {
+  font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+
+}
+.foot > button:first-child {/* 버튼2 */
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ededed;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.foot > button:last-child {/* 버튼3 */
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #aaaaaa;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+}
+
+*{/* 모든 내용 폰트 설정할것 */
+  /* 프리텐다드 thin */
+  font-family: 'Pretendard-Thin';
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

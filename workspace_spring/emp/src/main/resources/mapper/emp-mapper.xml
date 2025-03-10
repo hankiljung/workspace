@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.emp.mapper.EmpMapper">
+
+    <!--부서조회 쿼리-->
+    <select id="selectDept" resultType="EmpDTO">
+        SELECT
+        *
+        FROM REACT_DEPT
+    </select>
+
+    <!-- 부서 등록 쿼리 -->
+    <insert id="insertDept">
+        INSERT INTO REACT_DEPT(
+        DEPT_NAME
+        )
+        VALUES(
+        #{deptName}
+        )
+    </insert>
+
+    <!--부서 삭제 쿼리-->
+    <delete id="deleteDept">
+        DELETE
+        FROM REACT_DEPT
+        WHERE DEPT_NO = #{deptNo}
+    </delete>
+
+    <!--직급 조회 쿼리-->
+    <select id="selectJob" resultType="EmpDTO">
+        SELECT
+        *
+        FROM REACT_JOB
+    </select>
+
+    <!--직급 등록 쿼리-->
+    <insert id="insertJob">
+        INSERT INTO REACT_JOB(
+        JOB_NAME
+        )
+        VALUES(
+        #{jobName}
+        )
+    </insert>
+
+    <!--직급 삭제 쿼리-->
+    <delete id="deleteJob">
+        DELETE
+        FROM REACT_JOB
+        WHERE JOB_NO = #{jobNo}
+    </delete>
+
+
+    <!--사원 등록 쿼리-->
+    <insert id="insertEmp">
+        INSERT INTO REACT_EMP(
+        DEPT_NO,
+        JOB_NO,
+        EMP_NAME,
+        GENDER,
+        HIRE_DATE
+        )
+        VALUES(
+        #{deptNo},
+        #{jobNo},
+        #{empName},
+        #{gender},
+        #{hireDate}
+        )
+    </insert>
+
+    <select id="selectEmp" resultType="EmpDTO">
+        SELECT
+        d.DEPT_NAME,
+        j.JOB_NAME,
+        e.EMP_NAME,
+        e.GENDER,
+        e.HIRE_DATE
+        FROM REACT_EMP AS e
+        LEFT  JOIN REACT_JOB AS j
+        ON e.JOB_NO = j.JOB_NO
+        LEFT  JOIN REACT_DEPT AS d
+        ON e.DEPT_NO = d.DEPT_NO
+        <where>
+            <if test= 'empName != null and !empName.equals("")'>
+                  AND e.EMP_NAME LIKE CONCAT('%', #{empName} ,'%')
+           </if>
+            <if test= 'deptName != null and !deptName.equals("")'>
+                  AND d.DEPT_NAME = #{deptName}
+            </if>
+            <if test='gender != null and !gender.equals("")'>
+                 AND GENDER = #{gender}
+            </if>
+            <if test='hireDateStart != null and !hireDateStart.equals("")and hireDateEnd != null and !hireDateEnd.equals("")'>
+                    AND HIRE_DATE BETWEEN #{hireDateStart} AND #{hireDateEnd}
+            </if>
+        </where>
+
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

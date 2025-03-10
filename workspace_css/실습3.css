@@ -1,0 +1,56 @@
+.tb {
+  width: 80%;
+  margin: auto;
+
+}
+
+table {
+  width: 100%;
+  border:2px solid white;
+
+}
+
+th {
+  color: white;
+  border:2px solid white;
+
+  background-color: #2e2e73;
+}
+
+td {
+  border:2px solid white;
+
+  background-color: #e5e5ff; 
+  text-align: center  ;
+}
+
+.left {
+float: right;
+}
+
+.right {
+  color: red;
+  float: left;
+
+}
+
+button { 
+  background-color: #2e2e73;
+  color: white;
+  display: inline;
+  margin-right: 2px;
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  
+}
+
+h3 {
+  text-align: center;
+}

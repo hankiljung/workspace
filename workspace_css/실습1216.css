@@ -1,0 +1,96 @@
+.back {
+   background-color: white;
+   width: 80%;
+   border: 1px solid lightgray;
+   border-radius: 8px;  
+   margin: auto;
+   padding: 10px;
+   box-shadow: 1px 1px 5px lightgray;
+   
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+    width: 100%;
+  background-color: white;
+  display: grid; 
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto ;
+}
+
+
+.item1 {
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.item2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  padding: 20px;
+  align-content: ;
+
+}
+
+/* 버튼 */
+button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.bt1 {
+  color: white;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  height: 30px;
+}
+.bt2 {
+  color: white;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+
+
+i{
+  color: green;
+}
+
+.green {
+  text-align: center;
+  color: green;
+  margin-top: 3%;
+  font-weight: bold;
+}
+
+.id {
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+
+
+.item1 p {
+  font-weight: bold;
+  margin-top: ;
+}
+
+.item2 p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

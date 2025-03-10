@@ -1,0 +1,27 @@
+.lottoNum {
+  background-color: white;
+}
+.main {
+  display: flex;
+  
+  text-align: center;
+}
+.box{
+display: flex;
+margin: auto;
+width: 100%;
+justify-content: space-around;
+}
+.lottoNum{
+  background-color: lightgray;
+  width: 100px;
+}
+button{
+  border-style: none;
+  margin-bottom: 010px;
+  cursor: pointer;
+  width: 50px;
+}
+button:hover{
+  background-color: gray;
+}

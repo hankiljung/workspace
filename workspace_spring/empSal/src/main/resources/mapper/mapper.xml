@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.empSal.mapper.EmpSalMapper">
+	
+    <resultMap id="emp" type="EmpDTO">
+        <id property="empNo" column="EMP_NO"/>
+        <result property="empName" column="EMP_NAME"/>
+        <result property="gender" column="GENDER"/>
+        <result property="hireDate" column="HIRE_DATE"/>
+        <result property="deptNo" column="DEPT_NO"/>
+        <result property="jobNo" column="JOB_NO"/>
+        <result property="sal" column="SAL"/>
+        <collection property="dept" resultMap="dept" />
+        <collection property="job" resultMap="job"/>
+    </resultMap>
+
+    <resultMap id="dept" type="DeptDTO">
+        <id property="deptNo" column="dept_no"/>
+        <result property="deptName" column="dept_name"/>
+    </resultMap>
+
+    <resultMap id="job" type="JobDTO">
+        <id property="jobNo" column="job_no"/>
+        <result property="jobName" column="job_name"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="emp">
+        SELECT
+        e.EMP_NO,
+        d.DEPT_NAME,
+        j.JOB_NAME,
+        e.EMP_NAME,
+        e.GENDER,
+        SAL,
+        e.HIRE_DATE
+        FROM REACT_EMP AS e
+        LEFT  JOIN REACT_JOB AS j
+        ON e.JOB_NO = j.JOB_NO
+        LEFT  JOIN REACT_DEPT AS d
+        ON e.DEPT_NO = d.DEPT_NO
+    </select>
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

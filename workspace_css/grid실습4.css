@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.box{
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+
+  background-color: white;
+}
+.head {
+  width: 60%;margin: auto;
+
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.head>span{
+  padding: 5px 10px;
+  background-color: lightpink;
+  color: white;
+  
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.blue{
+  color: lightblue;
+
+}
+i{
+  cursor: pointer;
+}
+.mid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 10px;
+  height: 100%;
+}
+.img{
+  height: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img>div{
+  height: 100%;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.text{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.613);
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0%;
+}
+.text:hover{
+  opacity: 100%;
+  transition: .4s;
+}
+.bold{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.mitxt{
+  margin-bottom: 10px;
+
+}
+
+i:hover{
+  color: skyblue;
+}

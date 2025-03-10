@@ -1,0 +1,35 @@
+/* 박스 사이징 */
+
+.container {
+  border: 5px solid red;
+  width: 500px;
+  margin: 20px;
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.inner1 {
+  font-size: 2rem/* 32px */;
+  background-color: #a05e5e;
+  height: 80px;
+  border: 5px solid blue;
+  padding: 0px 10px/* 좌우만 패딩줌 */;
+  width: 500px;
+  box-sizing: content-box;
+  /* 모든 박스는 컨텐츠 영역을 기준으로 크기 표현*/
+  /* 안넣어주면 컨박으로 기본설정 */
+
+}
+
+.inner2 {
+  font-size: 2rem/* 32px */;
+  background-color: #a05e5e;
+  height: 100%;
+  border: 5px solid blue;
+  padding: 0px 10px/* 좌우만 패딩줌 */;
+  width: 500px;
+  box-sizing: border-box;
+  /* 보더 박스는 */
+}
+

@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 20px solid orange;
+  color: orange;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.body4Box {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+.body4Box > p:nth-child(3) {
+  font-size: 0.8rem;
+}
+.boxBox {
+  display: flex;
+  width: 60%;
+  margin: 0px auto;
+  justify-content: space-between;
+}

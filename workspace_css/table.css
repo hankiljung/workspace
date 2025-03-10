@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Pretendard-Regular'
+}
+.container {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* 테이블 관련 */
+table {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+tr,td {
+  border: 1px solid black;
+}
+td {
+ padding: 6px;
+}
+
+/* 글자내용 */
+.left {
+  text-align: right;
+  font-size: 0.8rem;
+  font-family: 'pretendard';
+  font-weight: 100;
+}
+
+.red {
+  color: red;
+  font-weight: 200;
+
+}
+
+.button{
+  cursor: pointer;
+}
+
+.button-center {
+  text-align: right;
+  margin-top: 5px;
+}

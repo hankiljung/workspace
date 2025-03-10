@@ -1,0 +1,17 @@
+.headerContainer {
+  display: flex;
+  background-color: rgb(37, 129, 190);
+}
+
+.headerContainer a {
+  margin-right: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+/* active 클래스가 적용된 a태그 */
+a.active1 {
+  color: orange;
+}

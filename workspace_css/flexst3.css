@@ -1,0 +1,36 @@
+.bg {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.head { 
+  border: 2px solid brown;
+  height: 50px;
+}
+
+.body {
+  border: 2px solid gold;
+  display: flex;
+  height: 300px;
+}
+
+.body1 {
+  border: 3px solid green;
+  width: 60%;
+  
+}
+.body2 {
+  width: 40%;
+  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+.body2 >div {
+  border: 3px solid blue;
+  height: 40%;
+
+}

@@ -1,0 +1,16 @@
+h2 {
+  color: aliceblue;
+  background-color: aqua;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-image: url(dog.png);
+}
+
+div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}

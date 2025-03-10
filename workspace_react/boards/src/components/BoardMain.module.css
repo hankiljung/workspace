@@ -1,0 +1,109 @@
+.main {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selBox {
+  margin-bottom: 10px;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.selBox > input {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+table {
+  
+  width: 100%;
+  margin-bottom: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray ! important;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td {
+  padding: 5px;
+
+  border-bottom: 1px solid lightgray;
+}
+
+
+tbody > tr:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+button {
+  background-color: rgb(0, 183, 255);
+  border-style: none;
+  padding: 4px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(46, 94, 112);
+}
+
+hr {
+  width: 80%;
+}
+
+h1 {
+  color: rgb(71, 71, 71);
+  margin-bottom: 20px;
+}
+
+.smallFont {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.rlMargin {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.replyBox {
+  display: flex;
+}
+
+.replyBox > input {
+  margin-right: 10px;
+  height: 100%;
+}
+
+.replyAndButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.replyKid {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.replyKid2 {
+  display: flex;
+  font-size: 1.2rem;
+}
+.replyKid2 > p {
+  margin-right: 20px;
+}
+.reply {
+  padding-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}

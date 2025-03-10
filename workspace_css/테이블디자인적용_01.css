@@ -1,0 +1,67 @@
+.ta {
+  margin: auto;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+tr,td {
+  border: 1px solid black;
+}
+
+th {
+  background-color: antiquewhite;
+
+
+}
+tr > th:first-child {
+  background-color: aqua;
+}
+
+.red {
+  color: red;
+  font-style: italic;
+
+}
+
+div {
+  text-align: center;
+}
+
+input:focus {
+  background-color: red;
+  color: white;
+}
+
+input:checked {
+  background-color: red;
+  color: red;
+}
+
+input.chckbox  {
+  color: red;
+}
+
+input {
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+textarea:focus {
+  background-color: red;
+}
+
+.c1 {
+  position: absolute;
+  right: 1px;
+
+
+}
+
+.mo {
+  position: relative;
+  width: 80%;
+  height: 10px;
+  margin: auto;
+}

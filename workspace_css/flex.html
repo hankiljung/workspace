@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .container {
+    background-color: rgb(255, 179, 0);
+    border: 1px solid black;
+    display: flex;
+    height: 300px;
+    width: 80%;
+    flex-flow: row ;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+.item {
+  
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+/* flex모드로 들어가려면  */
+/* displayd에서 flex를 적용한다  */
+/* display : flex; */
+/* flex, incline-flex */
+
+
+/* flex-flow = flex-direction+flex-wrap */
+/* flex-direction - row, row-reverse, columm, columm-reverse */
+/* flex-wrap - nowrap, wrap, wrap-reverse */
+
+/* 가로 정렬 */
+/* justify-content */
+/* flex-start : 시작정렬 */
+/* flex-end : 끝정렬 */
+/* center : 중앙정렬 */
+/* space-between : 아이템 사이에 균일한 간격 */
+/* space-around : 균일한 간격을 만들어 줌 */
+/* space-evenly : 엣지와 iE에 적용x 모든 컨텐츠에 동일한 간격 */
+
+/* 수직 정렬 */
+/* align-item */
+/* stretch 수직축으로 끝까지 늘어남 */
+/* flex-start : 시작점 정렬 */
+/* flex-end : 마지막에 정렬 */
+/* center : 중앙 정렬 */
+/* baseline : 텍스트를 베이스라인에 정렬 */
+
+/* 아이템 수직 정렬 */
+/* align-content */
+/* flex-start : 시작정렬 */
+/* flex-end : 끝정렬 */
+/* center : 중앙정렬 */
+/* space-between : 아이템 사이에 균일한 간격 */
+/* space-around : 균일한 간격을 만들어 줌 */
+/* space-evenly : 엣지와 iE에 적용x 모든 컨텐츠에 동일한 간격 */
+
+
+/* justify content -가로 */
+/* align content - 세로 */
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">helloflex Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga modi nostrum error odit, quas ea mollitia in consequuntur sint.
+    </div>
+    <div class="item" style="background-color: green;">abc</div>
+    <div class="item">helloflex</div>
+  </div>
+
+</body>
+</html>

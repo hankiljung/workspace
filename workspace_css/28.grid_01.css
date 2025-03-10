@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  width: 50%;
+  height: 500px;
+  margin: 20px auto;
+  border: 1px solid black;
+  grid-template-columns:repeat(3,1fr) ;
+  grid-template-rows:repeat(2,1fr) ;
+}
+
+.container > div {
+  border: 1px solid red;
+}
+.container >div:first-child {
+  /* grid-column-start: 1;
+  grid-column-end: 3 ; */
+  grid-column: 1/3;
+}

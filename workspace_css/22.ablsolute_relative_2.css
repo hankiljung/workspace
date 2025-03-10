@@ -1,0 +1,45 @@
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.mb {
+  display: flex;
+  justify-content:  space-evenly;
+}
+
+i {
+  color: black;
+  font-size: 32px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+i:hover {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 11px;
+  top: 6px;
+}
+.box2-i{
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+  align-content: center;
+  background-color: rgb(237, 237, 237);
+}
+
+

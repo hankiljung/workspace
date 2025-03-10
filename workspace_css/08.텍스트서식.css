@@ -1,0 +1,55 @@
+/* 
+  폰트의 기본 크기는 16px
+
+
+
+  크기 결정 단위
+  1. px
+  2. % : 부모태그를 기준으로 백분률 표현
+  3. em :부모태그를 기준으로 백분률 표현
+  4. rem : 루트태그를 기준으로 백분률
+           ex > 1rem -> 16px
+           ex > 0.5rem -> 8px
+           ex > 2rem -> 32px
+
+  크기는 모든 곳에 적용된다.
+
+  p태그는 1rem이다
+
+*/
+
+/* 폰트 웨이트 기본 두께 사이즈 400 */
+/* 볼드체는 700 */
+
+.l1 {
+  /* 폰트 크기 변경(기본크기 : 16px) */
+  font-size: 20px;
+  font-weight: bold;
+  /* 행간 */
+  line-height: 30px;
+}
+
+.l2 {
+  /* 2rem -> 32px */
+  font-size: 1.5rem;
+  font-style: italic;
+  font-style: oblique;
+  text-align: center;
+  /* 글자색 */
+  color: green;
+  text-decoration: line-through solid rgb(230, 13, 20);
+  /* 자간 */
+  letter-spacing: 10px;
+  /* 행간 */
+  line-height: 30px;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}

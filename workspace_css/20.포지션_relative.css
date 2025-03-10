@@ -1,0 +1,53 @@
+/* position : relative */
+/* 상대적인 위치 */
+/*  */
+
+div {
+  width: 200px;
+  height: 200px;
+  font-size: 2rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.d1 {
+  float: inline-end;
+  background-color: skyblue;
+  position: relative;
+}
+
+.d2 {
+  background-color: rgba(135, 207, 235, 0.305);
+  float: inline-end;
+  position: relative;
+}
+
+.d3 { 
+  float: inline-end;
+
+  background-color: rgba(135, 207, 235, 0);
+
+}
+
+.d2:hover{
+  background-color: skyblue;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  left: 20px;
+
+}
+
+.d2:active {
+background-color: rgb(5, 77, 105);
+}
+
+input:focus {
+  background-color: aqua;
+}
+input::selection {
+  background-color: red;
+}

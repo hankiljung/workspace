@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그명선택자</title>
+  <!-- 스타일 태그 안에 css문법을 작성한다. -->
+  <style>
+    /* 태그명 선택자 */
+    
+    /* h1 태그에 디자인 적용하겠다. */
+    /* 글자색 변경 color: 속성값; */
+    /* 배경색 변경 background-color: 속성값; */
+    /* 속성은 한줄로 사용해도 된다 다만 ;세미콜론은 항상 사용할것 */
+    /* 같은 태그가 여러개라면 모든 태그에 디자인이 적용된다. */
+
+    h1 {
+      background-color: blanchedalmond;
+      text-align: center; 
+      color: red;}    
+    h2 {
+      background-color: darkblue;
+      text-align: right;
+      color: blue;}
+    h3 {
+      color: green;
+      text-align: center;}
+    h4 {
+      color: white;
+      text-shadow: -1px 0px red, 0px 1px red, 1px 0px red, 0px -1px red;
+      background-color:blue;
+      text-align: center;}
+  </style>
+
+</head>
+<body>
+  <!-- 
+
+    CSS는 HTML로 만든 웹 페이지에 디자인을 입히는 언어입니다.
+    CSS는 HTML파일에서도 작업 가능하고, CSS 파일만 별도로 생성하는 것도 가능
+    CSS 초급자 기준으로 선택자(대상)와 속성(디자인)을 잘 공부하면 된다. 
+    
+    선택자 : 디자인을 적용한 대상
+    속성 : 선택자에 적용할 디자인
+    
+    선택자 {
+    속성:속성값;
+  
+    }
+  -->
+  <p>
+    <h1 class="title">첫번째 제목 태그</h1>
+    <h2>두번째 제목 태그</h2>
+    <h3>세번재 제목 태그</h3>
+    <h4>네번째 제목 태그</h4>
+  </p>
+</body>
+</html>

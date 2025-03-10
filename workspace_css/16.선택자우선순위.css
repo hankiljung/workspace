@@ -1,0 +1,50 @@
+div {
+  font-size: 30px;
+  color: rgba(20, 20, 20, .20);
+  text-align: center;
+}
+/*  */
+/*  */
+div {
+ background-color: aqua;
+ color: rgba(20, 20, 20, .20);
+}
+/*  */
+/* 중복된 속성을 부여하면 */
+/* !!제일 마지막 속성을 따른다.!! */
+.p1 {
+  color: red;
+}
+.p1 {
+  background-color: bisque;
+}
+/*  */
+/*  */
+#s1  {
+  font-style: italic;
+  font-size: 15px;
+}
+.s1 {
+  font-style: italic;
+  font-size: 12px;
+}
+span {
+  font-size: 20px !important;
+  /* !important는 최고 우선순위로 강제변경하는 방식 */
+}
+h3 {
+  color: white !important;
+}
+/*  */
+/* 선택자가 달라도 같은 태그를 지칭하면 */
+/* 모두 적용이 된다. */
+
+/* 우선순위  */
+/* 1순위 !important style */
+/* 2순위 inline style(html파일에 간략히 style 지정) */
+/* 3순위 아이디 선택자 */
+/* 4순위 클래스 선택자 */
+/* 5순위 태그명 선택자 */
+h5 {
+  color: red ;
+}

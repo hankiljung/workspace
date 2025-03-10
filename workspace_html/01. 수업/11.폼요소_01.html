@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:hover {
+      background-color: aqua;
+      
+    }
+    input:active {
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>폼 요소 - 1</h2>  
+  
+  <input type="text" maxlength="5" >  <br> <!-- 타입 속성이 무조건 있어야 한다. -->
+  <input type="text" placeholder="이름입력">  <br> <!-- placeholder 안내문구 -->
+  <input type="text" value="이름입력">  <br> <!-- value는 입력되어있다 -->
+  <input type="password" placeholder="암호"> <br> <!-- 패스워드는 가려진다. -->
+  <input type="number" max="5" min="2" value="3"> <br> <!-- 숫자만 입력 가능하다. -->
+  <input type="date"> <br> <!-- 날짜 입력 -->
+  <input type="button" value="제출" onclick="alert(5)"> <br> <!-- 버튼 -->
+  <input type="checkbox" checked>독서 <!-- 체크박스는 다수 선택 가능 checked 입력해놓으면 선택된상태로 나온다-->
+  <input type="checkbox" checked>운동
+  <input type="checkbox">요가 <br>
+  <input type="radio" name="gender">남성 <!-- 라디오는 둘중 하나만 고를때, 라디오는 무조건 선택해야한다. -->
+  <input type="radio" name="gender" checked>여성 <br> <!-- 라디오에서 하나의 묶음을 인식시키기 위해 name 속성을 부여한다. --> 
+  <input type="file"> <br> <!-- 파일올릴때 -->
+  
+  <select>
+    <option>010</option>
+    <option>011</option>
+    <option>012</option>
+  </select>
+
+  <select>
+    <option>011</option>
+    <option selected>012</option><!-- selected를 쓰면 선택된 상태로 나온다 -->
+    <option>010</option>
+  </select> <br>
+  
+  <textarea rows="5" cols="40"></textarea> <br>
+  
+  <button type="button"> 버튼 </button> <!-- 버튼을 만들때는 항상 타입을 설정해준다. -->
+  
+
+</body>
+</html>
